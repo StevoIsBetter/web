@@ -1,1 +1,210 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>F1 Fan Experience 2026 — Event Registration</title>
+</head>
+
+<body>
+  <header>
+    <h1>F1 Fan Experience 2026 — Event Registration</h1>
+    <p>
+      Join a full-day Formula 1 fan event featuring a keynote, workshops, and a networking lunch.
+      Register below to reserve your spot.
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Event Introduction</h2>
+
+      <figure>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/512px-F1.svg.png"
+          alt="Formula 1 logo"
+          width="320"
+        />
+        <figcaption>Formula 1 Fan Experience — One-day registration event</figcaption>
+      </figure>
+
+      <video width="520" controls>
+        <source src="f1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>The Essentials: How to Register</h3>
+      <ol>
+        <li>Review the schedule and choose your ticket type (Standard or VIP).</li>
+        <li>Select your workshops of interest and provide any dietary requirements.</li>
+        <li>Submit the form and save your confirmation details.</li>
+      </ol>
+
+      <h3>Key Terms</h3>
+      <dl>
+        <dt>Paddock Pass (VIP)</dt>
+        <dd>A VIP ticket option that includes premium seating and a special Q&amp;A session.</dd>
+
+        <dt>Workshop Track</dt>
+        <dd>A focused session series (data, sim racing, strategy) you can select during registration.</dd>
+      </dl>
+    </section>
+
+    
+    <section>
+      <h2>Event Schedule</h2>
+
+      <table border="1">
+        <caption>F1 Fan Experience — Daily Schedule</caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Time</th>
+            <th scope="col">Activity</th>
+            <th scope="col">Speaker</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>9:00 AM</td>
+            <td>Check-in &amp; Welcome</td>
+            <td>Event Staff</td>
+          </tr>
+
+          
+          <tr>
+            <td>9:30 AM</td>
+            <td rowspan="2">Grand Keynote: “Inside F1 Strategy”</td>
+            <td rowspan="2">Guest Analyst Panel</td>
+          </tr>
+          <tr>
+            <td>10:30 AM</td>
+          </tr>
+
+          <tr>
+            <td>11:30 AM</td>
+            <td>Workshop Block A: Tire &amp; Pit Strategy</td>
+            <td>Performance Engineer</td>
+          </tr>
+
+          
+          <tr>
+            <td colspan="3"><strong>Networking Lunch</strong> (Meet &amp; Greet + Photo Wall)</td>
+          </tr>
+
+          <tr>
+            <td>1:30 PM</td>
+            <td>Workshop Block B: F1 Data &amp; Telemetry Basics</td>
+            <td>Data Specialist</td>
+          </tr>
+
+          <tr>
+            <td>2:30 PM</td>
+            <td>Workshop Block C: Sim Racing Time Trials</td>
+            <td>Sim Coach</td>
+          </tr>
+
+          <tr>
+            <td>3:30 PM</td>
+            <td>Closing Session + Prizes</td>
+            <td>Host</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+   
+    <section>
+      <h2>Registration Portal</h2>
+
+      <form action="register.php" method="post">
+        <fieldset>
+          <legend>Attendee Information</legend>
+
+          <p>
+            <label for="fullName">Full Name:</label><br />
+            <input type="text" id="fullName" name="fullName" required />
+          </p>
+
+          <p>
+            <label for="email">Email Address:</label><br />
+            <input type="email" id="email" name="email" required />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Ticket Type</legend>
+
+          <p>
+            <input type="radio" id="standard" name="ticketType" value="Standard" required />
+            <label for="standard">Standard</label>
+          </p>
+
+          <p>
+            <input type="radio" id="vip" name="ticketType" value="VIP" />
+            <label for="vip">VIP</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Workshops of Interest</legend>
+
+          <p>
+            <input type="checkbox" id="wsStrategy" name="workshops" value="Strategy" />
+            <label for="wsStrategy">Tire &amp; Pit Strategy</label>
+          </p>
+
+          <p>
+            <input type="checkbox" id="wsData" name="workshops" value="Data" />
+            <label for="wsData">F1 Data &amp; Telemetry</label>
+          </p>
+
+          <p>
+            <input type="checkbox" id="wsSim" name="workshops" value="Sim" />
+            <label for="wsSim">Sim Racing Time Trials</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Country of Origin</legend>
+
+          <p>
+            <label for="country">Choose your country:</label><br />
+            <select id="country" name="country" required>
+              <option value="">-- Select One --</option>
+              <option value="USA">United States</option>
+              <option value="UK">United Kingdom</option>
+              <option value="Canada">Canada</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Australia">Australia</option>
+              <option value="Japan">Japan</option>
+              <option value="Italy">Italy</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Special Dietary Requirements</legend>
+
+          <p>
+            <label for="diet">Tell us anything we should know:</label><br />
+            <textarea id="diet" name="diet" rows="4" cols="50" placeholder="Example: Vegetarian, gluten-free, peanut allergy"></textarea>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Submit Registration</button>
+          <button type="reset">Reset Form</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>2026 F1 Fan Experience</p>
+  </footer>
+</body>
+</html>
